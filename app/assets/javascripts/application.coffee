@@ -1,0 +1,11 @@
+#= require jquery
+#= require angular
+#= require angular-resource
+#= require angular-ui-router
+#= require angular-rails-templates
+#= require ./frontend/angular/vc_tests
+#= require_tree ./frontend/angular/templates
+#= require_tree ./frontend/angular/config
+#= require_tree ./frontend/angular/controllers
+#= require_tree ./frontend/angular/directives
+#= require_tree ./frontend/angular/services
