@@ -30,12 +30,14 @@ gem 'jbuilder', '~> 2.5'
 gem 'angularjs-rails', '1.4.7'
 gem 'angular-ui-router-rails'
 gem 'angular-rails-templates'
-gem 'less'
+gem 'less-rails', '~> 2.7.0'
 gem 'slim'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rubocop', require: false
 end
 
 group :development do
@@ -53,6 +55,7 @@ group :test do
   gem 'faker'
   gem 'database_cleaner'
   gem 'capybara'
+  gem 'poltergeist'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

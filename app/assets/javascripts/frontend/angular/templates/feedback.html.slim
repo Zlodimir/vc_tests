@@ -1,0 +1,21 @@
+.feedback-page
+  ng-include src="'partials/topbar.html'"
+  h3 Feedback page of the site
+
+  .alert.alert-success ng-show="showSuccessAlert"
+    button type="button" data-ng-click="switchBool('showSuccessAlert')" ×
+    strong Done!
+
+  .alert.alert-error ng-show="showErrorAlert"
+    button type="button" data-ng-click="switchBool('showErrorAlert')" ×
+    strong Something went wrong!
+
+  form name="feedback-form" ng-submit="saveFeedback(feedback)"
+    .form-group
+      label for="email" Email
+      input#email required="required" type="email" ng-model="feedback.email"
+    .form-group
+      label for="text" Text
+      textarea#text required="required" ng-model="feedback.text" placeholder="Description" rows="10" cols="30"
+    .form-group
+      button type="submit" ng-disabled="feedback-form.$invalid" Submit

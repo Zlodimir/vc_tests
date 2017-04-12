@@ -1,1 +1,1 @@
-angular.module 'vc_tests', ['ui.router']
+angular.module 'vc_tests', ['ui.router', 'ngResource']
